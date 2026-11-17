@@ -9,7 +9,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   
+  
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+  rel="stylesheet"
+/>
 
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
 
@@ -17,18 +23,25 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="announcement">Handmade with love ♡ &nbsp;•&nbsp; Custom orders welcome</div>
+  <div class="announcement">
+    Handmade with love ♡ &nbsp;•&nbsp; Custom orders welcome
+  </div>
   <header class="site-header">
     <nav class="nav container" aria-label="Main navigation">
       <a href="#home" class="logo">
-<div class="brand">
-    <span class="brand-name">The Maison</span>
-    <span class="brand-subtitle">Handcrafted by Anna</span>
-</div>
-</a>
+        <div class="brand">
+            <span class="brand-name">
+              The Maison
+            </span>
+            <span class="brand-subtitle">Handcrafted by Anna</span>
+        </div>
+      </a>
       <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">☰</button>
       <div class="nav-links" id="nav-links">
-        <a href="#home">Home</a><a href="#collection">Collection</a><a href="#about">Our Story</a><a href="#contact">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#collection">Collection</a>
+        <a href="#our-story">Our Story</a>
+        <a href="#contact">Contact</a>
         <a class="nav-order" href="#collection">Shop Now ↗</a>
       </div>
     </nav>
@@ -40,29 +53,161 @@
           <span class="eyebrow">✧ A little handmade happiness ✧</span>
           <h1>Little loops,<br /><em>lots of love.</em></h1>
           <p>From dreamy crochet bouquets to the cuddliest little plushies, every piece is made slowly, thoughtfully, and just for you.</p>
-          <div class="hero-actions"><a href="#collection" class="btn btn-primary">Explore Collection <span>↗</span></a><a href="#about" class="text-link">Meet the maker →</a></div>
-          <div class="hero-note">♡ Handcrafted &nbsp; ✿ Gift-ready &nbsp; ♡ Made with care</div>
+          <div class="hero-actions">
+            <a href="#collection" class="btn btn-primary">Explore Collection <span>↗</span></a>
+            <a href="#about" class="text-link">Meet the maker →</a>
+          </div>
+          <div class="hero-note">
+            ♡ Handcrafted &nbsp; ✿ Gift-ready &nbsp; ♡ Made with care
+          </div>
         </div>
         <div class="hero-visual">
-          <div class="hero-image-wrap"><img src="Bouquet.jpeg" alt="Soft pastel flower bouquet" onerror="this.src='https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1100&q=85'" /></div>
+          <div class="hero-image-wrap">
+            <img src="Bouquet.jpeg" alt="Soft pastel flower bouquet" onerror="this.src='https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1100&q=85'" />
+          </div>
           <div class="floating-sticker">made with<br /><strong>♡ love</strong></div>
-          <span class="sparkle sparkle-one">✳</span><span class="sparkle sparkle-two">✦</span>
+          <span class="sparkle sparkle-one">✳</span>
+          <span class="sparkle sparkle-two">✦</span>
         </div>
       </div>
     </section>
-    <div class="marquee" aria-hidden="true"><div>✿ HANDMADE WITH LOVE &nbsp;&nbsp; ♡ UNIQUE LITTLE GIFTS &nbsp;&nbsp; ✿ CROCHET MAGIC &nbsp;&nbsp; ♡ MADE JUST FOR YOU &nbsp;&nbsp; ✿ HANDMADE WITH LOVE &nbsp;&nbsp; ♡ UNIQUE LITTLE GIFTS</div></div>
+    <div class="marquee" aria-hidden="true">
+      <div>
+        ✿ HANDMADE WITH LOVE &nbsp;&nbsp; ♡ UNIQUE LITTLE GIFTS &nbsp;&nbsp; ✿ CROCHET MAGIC &nbsp;&nbsp; ♡ MADE JUST FOR YOU &nbsp;&nbsp; ✿ HANDMADE WITH LOVE &nbsp;&nbsp; ♡ UNIQUE LITTLE GIFTS
+      </div>
+    </div>
     <section class="section collection" id="collection">
       <div class="container">
-        <div class="section-heading"><h2>Find your new <em>favorite.</em></h2><p>Thoughtful little treasures for you and your favorite people.</p></div>
-        <div class="filters" role="group" aria-label="Filter products"><button class="filter active" data-filter="all" aria-pressed="true">All goodies</button><button class="filter" data-filter="bouquets" aria-pressed="false">Bouquets</button><button class="filter" data-filter="plushies" aria-pressed="false">Plushies</button><button class="filter" data-filter="baby" aria-pressed="false">Baby Products</button><button class="filter" data-filter="embroidery" aria-pressed="false">Embroidery</button></div>
+        <div class="section-heading">
+          <h2>Find your new <em>favorite.</em></h2>
+          <p>Thoughtful little treasures for you and your favorite people.</p>
+        </div>
+        <div class="filters" role="group" aria-label="Filter products">
+          <button class="filter active" data-filter="all" aria-pressed="true">All goodies</button>
+          <button class="filter" data-filter="bouquets" aria-pressed="false">Bouquets</button>
+          <button class="filter" data-filter="plushies" aria-pressed="false">Plushies</button>
+          <button class="filter" data-filter="baby" aria-pressed="false">Baby Products</button>
+          <button class="filter" data-filter="embroidery" aria-pressed="false">Embroidery</button>
+          <button class="filter" data-filter="names" aria-pressed="false">Crochet Names</button>
+          <button class="filter" data-filter="hairs" aria-pressed="false">Hair Accessories</button>
+          <button class="filter" data-filter="key" aria-pressed="false">Keychains</button>
+          <button class="filter" data-filter="resin" aria-pressed="false">Resin</button>
+        </div>
         <div class="product-grid" id="product-grid"></div>
-        <p class="collection-footnote">♡ Every piece is handmade. Colors and customizations can be discussed before ordering.</p>
+        <p class="collection-footnote">♡ Every piece is handmade with love. Colors and customizations can be discussed before ordering. Please note that prices may vary depending on your customization requests.</p>
       </div>
     </section>
-    <section class="about section" id="about"><div class="container about-grid"><div class="about-art"><div class="about-art-inner"><span>🧶</span><div>made with<br /><em>heart & hands</em></div><small>one stitch at a time ♡</small></div></div><div class="about-copy"><span class="eyebrow">♡ A note from the maker</span><h2>A little story behind <em>every stitch.</em></h2><p>Welcome to The Maison Handcrafted by Anna, Where creativity feels home. We believe the sweetest gifts are the ones made with time, patience, and a whole lot of love.</p><p>Whether it's a bouquet that lasts forever or a plush friend to brighten someone's day, we hope our creations bring you a little joy.</p><a href="#contact" class="btn btn-primary">Say Hello ↗</a></div></div></section>
-    <section class="promise section"><div class="container promise-grid"><div><span>🎀</span><h3>Thoughtful gifting</h3><p>Little surprises with a big heart.</p></div><div><span>🧶</span><h3>Handmade magic</h3><p>Each stitch made with care.</p></div><div><span>🌷</span><h3>Made for you</h3><p>Ask about custom colors and styles.</p></div></div></section>
-    <section class="contact section" id="contact"><div class="container contact-card"><span class="eyebrow">♡ Let's make something special</span><h2>Have a custom idea <em>in mind?</em></h2><p>Tell us what you're dreaming of! Message us on WhatsApp for orders, custom requests, and availability.</p><a class="btn btn-light" id="contact-whatsapp" href="#" target="_blank" rel="noopener noreferrer">Chat on WhatsApp ↗</a><small>We'd love to hear from you ✿</small></div></section>
+    
+<section class="maison-story" id="our-story">
+  <div class="story-container">
+
+    <!-- LEFT: HANDMADE PRODUCT DISPLAY -->
+    <div class="story-products">
+      <div class="product-stage">
+
+        <img
+          src="bouquet.jpeg"
+          alt="Handmade artificial flower bouquet"
+          class="story-product bouquet"
+        />
+
+        <img
+          src="hoop.jpeg"
+          alt="Personalized wedding embroidery hoop"
+          class="story-product hoop"
+        />
+
+        <img
+          src="duck.jpeg"
+          alt="Yellow handmade crochet duckling"
+          class="story-product duck"
+        />
+
+        <img
+          src="bunny.jpeg"
+          alt="Pink handmade crochet bunny"
+          class="story-product bunny"
+        />
+
+        <img
+          src="clip.jpeg"
+          alt="Handmade sunflower crochet hair clips"
+          class="story-product clips"
+        />
+
+        <div class="handmade-note">
+          Handmade with Love ♡
+        </div>
+
+      </div>
+    </div>
+
+    <!-- RIGHT: OUR STORY -->
+    <div class="story-content">
+
+      <span class="story-eyebrow">
+        ♡ A NOTE FROM THE MAKER
+      </span>
+
+      <h2>
+        A little story behind
+        <em>every stitch.</em>
+      </h2>
+
+      <p>
+        Welcome to The Maison – Handcrafted by Anna,
+        where creativity feels home.
+      </p>
+
+      <p>
+        From delicate crochet creations and personalized
+        keepsakes to thoughtful handmade gifts, every
+        piece is carefully crafted with love and
+        attention to detail.
+      </p>
+
+      <p>
+        Our little dream is to turn simple threads,
+        beautiful ideas, and special memories into
+        something you'll cherish forever. ♡
+      </p>
+
+      <div class="story-signature">
+        With love, Anna ♡
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <section class="contact section" id="contact">
+      <div class="container contact-card">
+        <span class="eyebrow">♡ Let's make something special</span>
+        <h2>Have a custom idea <em>in mind?</em></h2>
+        <p>Tell us what you're dreaming of! Message us on WhatsApp for orders, custom requests, and availability.</p>
+        <a class="btn btn-light" id="contact-whatsapp" href="#" target="_blank" rel="noopener noreferrer">Chat on WhatsApp ↗</a>
+        <a href="https://www.instagram.com/the_maison_handcrafted_by_anna?exln=MWs4ZzVjdnVmb2NuNg=="
+          target="_blank"
+          rel="noopener noreferrer"
+          class="instagram-btn">
+          ♡ Connect with us on Instagram ↗
+        </a>
+        <small>We'd love to hear from you ✿</small>
+      </div>
+    </section>
   </main>
-  <footer class="footer"><div class="container footer-content"><a href="#home" class="logo"> <span>The Maison Handcrafted by Annna</span></a><p>Small stitches. Big feelings. ♡</p><div class="footer-links"><a href="#collection">Shop</a><a href="#about">About</a><a href="#contact">Contact</a></div></div></footer>
+  <footer class="footer">
+    <div class="container footer-content">
+      <a href="#home" class="logo"> 
+        <span>The Maison Handcrafted by Anna</span>
+      </a>
+      <p>Small stitches. Big feelings. ♡</p>
+      <div class="footer-links">
+        <a href="#collection">Shop</a>
+        <a href="#our-story">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
