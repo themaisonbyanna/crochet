@@ -6,13 +6,28 @@ const WHATSAPP_NUMBER = "918078174990";
 // by changing image to a local path such as "images/rose-bouquet.jpg".
 // The current photos are illustrative placeholders, not actual crochet products.
 const products = [
-  {name:"Artificial Flower Bouquet",category:"bouquets",price:799 ,description:"A forever-blooming gift of love.",image: "WhatsApp Image 2026-10-22 at 00.15.36.jpeg"},
-  {name:"Cute Crochet Duckling",category:"plushies",price:699 ,description:"A cheerful bunch to brighten a day.",image:"WhatsApp Image 2026-10-22 at 00.18.48.jpeg"},
-  {name:"Mini Crochet World Cup",category:"plushies",price:899,description:"Soft colors and everlasting smiles.",image:"WhatsApp Image 2026-10-22 at 00.19.53.jpeg"},
-  {name:"Crochet Baby Boots",category:"baby",price:599,description:"Your new soft little best friend.",image:"WhatsApp Image 2026-10-22 at 00.19.54.jpeg"},
-  {name:"Bag Embroidery",category:"embroidery",price:549,description:"A pocket-sized bundle of comfort.",image:"WhatsApp Image 2026-10-22 at 00.23.28.jpeg"},
-  {name:"Cute Bunny ",category:"plushies",price:649,description:"Made for hugs and happy moments.",image:"WhatsApp Image 2026-10-22 at 00.23.29.jpeg"},
-  {name:"Spiderman",category:"plushies",price:649,description:"Made for hugs and happy moments.",image:"WhatsApp Image 2026-10-22 at 00.30.00.jpeg"}
+  {name:"Artificial Flower Bouquet",category:"bouquets",price:1200 ,description:"A bouquet of timeless beauty, made to be treasured forever.",image: "bouque.jpeg"},
+  {name:"Cute Crochet Duckling",category:"plushies",price:499 ,description:"A tiny bundle of sunshine, stitched with love.",image:"duck.jpeg"},
+  {name:"Mini Crochet World Cup",category:"plushies",price:349,description:"A little trophy for your biggest victories.",image:"world cup.jpeg"},
+  {name:"Crochet Baby Boots",category:"baby",price:349,description:"Tiny stitches for the tiniest feet.",image:"boots.jpeg"},
+  {name:"Bag Embroidery",category:"embroidery",price:799,description:"Turning everyday essentials into wearable art.",image:"bag.jpeg"},
+  {name:"Cute Bunny ",category:"plushies",price:899,description:"Floppy ears, endless cuddles, and handmade love.",image:"bunny.jpeg"},
+  {name:"Spiderman",category:"plushies",price:699,description:"A little superhero with a whole lot of charm.",image:"spiderman.jpeg"},
+  {name:"Crochet Name",category:"names",price:599,description:"Your name, beautifully woven into something special.",image:"name crochey.png"},
+  {name:"Flower Hairband",category:"hairs",price:249,description:"A little bloom for your everyday look.",image:"hairband.png"},
+  {name:"Photo Bouquet",category:"bouquets",price:1299,description:"Your favourite memories, wrapped in love.",image:"poto bouque.jpeg"},
+  {name:"Wedding Embroidery Hoop",category:"embroidery",price:1799,description:"A love story stitched into a forever keepsake.",image:"hoop.jpeg"},
+  {name:"Embroidery Clip",category:"hairs",price:199,description:"Delicate floral details for a timeless touch.",image:"black slide.png"},
+  {name:"Crochet Hair Bow",category:"hairs",price:179,description:"A little bow, a lot of charm.",image:"bow.jpeg"},
+  {name:"Sunflower Clip",category:"hairs",price:249,description:"Little sunflowers to brighten every hairstyle.",image:"clip.jpeg"},
+  {name:"Crochet Long Tail Bow",category:"hairs",price:299,description:"Soft, graceful, and effortlessly pretty.",image:"hairbow.png"},
+  {name:"Strawberry Keychain",category:"key",price:179,description:"A berry sweet little companion for every day.",image:"strawberry.jpeg"},
+  {name:"Sunflower Keychain",category:"key",price:199,description:"Carry a little sunshine wherever you go.",image:"sunflower keychain.jpeg"},
+  {name:"Crochet Alphabet",category:"names",price:179,description:"Little letters, lovingly stitched just for you.",image:"alpha.jpeg"},
+  {name:"Fresh Flower Bouquet",category:"bouquets",price:300,description:"A little bunch of happiness, beautifully arranged with fresh blooms to make every moment special.",image:"fresh.jpeg"},
+  {name:"Resin Photo Frame",category:"resin",price:1400,description:"Preserve your favourite memories in a beautifully handcrafted resin frame, made to treasure forever.",image:"resin frame.jpeg"},
+  {name:"Purple Pearl Trinket Tray",category:"resin",price:399,description:"A touch of elegance for your everyday essentials. Handcrafted with dreamy purple swirls, pearl accents and delicate golden edges.",image:"resin bowl.png"}
+
 ];
 
 const grid = document.querySelector("#product-grid");
@@ -27,8 +42,8 @@ function renderProducts(filter="all") {
     card.className = "product-card";
     const imageWrap = document.createElement("div"); imageWrap.className = "product-image";
     const img = document.createElement("img"); img.src=product.image; img.alt=product.name+" (illustrative placeholder photo)"; img.loading="lazy";
-    const tag = document.createElement("span"); tag.className="product-tag"; tag.textContent=product.tag;
-    imageWrap.append(img,tag);
+    
+    imageWrap.append(img);
     const info = document.createElement("div"); info.className="product-info";
     const title = document.createElement("h3"); title.textContent=product.name;
     const desc = document.createElement("p"); desc.textContent=product.description;
@@ -49,5 +64,9 @@ const menuToggle=document.querySelector(".menu-toggle"), navLinks=document.query
 menuToggle.addEventListener("click",()=>{const isOpen=navLinks.classList.toggle("open");menuToggle.setAttribute("aria-expanded",String(isOpen));menuToggle.setAttribute("aria-label",isOpen?"Close navigation":"Open navigation");menuToggle.textContent=isOpen?"✕":"☰";});
 navLinks.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{navLinks.classList.remove("open");menuToggle.setAttribute("aria-expanded","false");menuToggle.setAttribute("aria-label","Open navigation");menuToggle.textContent="☰";}));
 document.querySelector("#contact-whatsapp").href=whatsappLink("Hi! I'd like to know more about your crochet products and custom orders.");
-document.querySelector("#year").textContent=new Date().getFullYear();
+const yearElement = document.querySelector("#year");
+
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+}
 renderProducts();
